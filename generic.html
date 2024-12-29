@@ -53,6 +53,34 @@
 								<p>I love to.</p>
 								<p>I like to</p>
 							</section>
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container img {
+    max-width: 100px; 
+    margin-right: 20px;
+}
+.container.text-left img {
+    order: 2; 
+    margin-left: 20px; 
+    margin-right: 0; 
+}
+
+<div class="container">
+    <img src="your-image1.jpg" alt="Your Image">
+    <p>Your text goes here. This is a paragraph of text that accompanies the image on the left.</p>
+</div>
+
+
+<div class="container text-left">
+    <p>Your text goes here. This is a paragraph of text that accompanies the image on the right.</p>
+    <img src="your-image2.jpg" alt="Your Image">
+</div>
+
+						
+
 
 						<footer>
   <div class="pagination">
