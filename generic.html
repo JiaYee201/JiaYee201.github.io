@@ -49,22 +49,32 @@
 <style>
 .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
 }
+
 .container img {
-    max-width: 100px; 
-    margin-right: 20px; 
+    width: 200px; 
+    margin-right: 20px;
 }
-.container.text-left img {
-    order: 2; 
-    margin-left: 20px;
-    margin-right: 0; 
+
+.container.text-left {
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+}
+
+.container.text-right {
+    flex-direction: row; /* Text on the left, image on the right */
+}
+
+.container h2 {
+    padding-left: 30px;
 }
 </style>
-<div class="container text-left" style="position: relative;">
+
+<!-- About Me Section -->
+<div class="container text-right" style="position: relative;">
     <h2 style="position: absolute; top: 20px; left: 0; width: 100%; padding-left: 30px;">About Me</h2>
-    <img src="images/me2.jpg" alt="Your Image" style="width: 200px; float: left; margin-right: 20px;">
+    <img src="images/me2.jpg" alt="Your Image">
     <ul>
         <li>🏠 I live in Johor, Kulai</li>
         <li>🍼 I was born on 1 February 2005</li>
@@ -73,29 +83,25 @@
     </ul>
 </div>
 
-
-
-<div class="container">
-    <img src="your-image1.jpg" alt="Your Image" style="width: 200px; float: left; margin-right: 20px;">
-    <p><strong>Hobbies and Preferences</strong></p>
-    <ul>
-        <li>🏸 I'm not a big fan of sports, but I occasionally play badminton with my friends</li>
-        <li>🔍 I love watching detective shows because they are both entertaining and educational</li>
-        <li>🎤 I enjoy singing, though I’m not very good at it</li>
-        <li>🛒 Shopping is one of my favorite ways to relax and enjoy myself</li>
-        <li>🤩 I became a K-pop fan last year, and my biases are Zerobaseone and Seventeen</li>
-        <li>🍴 I enjoy eating different types of food because it’s fun to try new flavors and discover different cuisines</li>
-        <li>❌ I’m not a fan of coriander, celery, green onions, green garlic, or bitter melon</li>
-    </ul>
+<!-- Hobbies and Preferences Section -->
+<div class="container text-left">
+    <img src="your-image1.jpg" alt="Your Image">
+    <div>
+        <p><strong>Hobbies and Preferences</strong></p>
+        <ul>
+            <li>🏸 I'm not a big fan of sports, but I occasionally play badminton with my friends</li>
+            <li>🔍 I love watching detective shows because they are both entertaining and educational</li>
+            <li>🎤 I enjoy singing, though I’m not very good at it</li>
+            <li>🛒 Shopping is one of my favorite ways to relax and enjoy myself</li>
+            <li>🤩 I became a K-pop fan last year, and my biases are Zerobaseone and Seventeen</li>
+            <li>🍴 I enjoy eating different types of food because it’s fun to try new flavors and discover different cuisines</li>
+            <li>❌ I’m not a fan of coriander, celery, green onions, green garlic, or bitter melon</li>
+        </ul>
+    </div>
 </div>
 
-
-
-
-
-
-
-<div class="container text-left" style="position: relative;">
+<!-- Education Section -->
+<div class="container text-right" style="position: relative;">
     <h2 style="position: absolute; top: 20px; left: 0; width: 100%; padding-left: 30px;">Education</h2>
     <img src="images/me3.jpg" alt="Your Image">
     <ul>
@@ -128,8 +134,8 @@
             </ul>
         </li>
     </ul>
-    
 </div>
+
 
 
 						
