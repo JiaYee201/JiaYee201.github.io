@@ -50,7 +50,7 @@
 /* Ensure container has flex properties to align elements correctly */
 .container {
     display: flex;
-    flex-direction: row; /* Ensures text is on the left and image on the right */
+    flex-direction: row; /* Default: text on the left, image on the right */
     align-items: flex-start;
     margin-bottom: 20px;
     padding: 20px;
@@ -59,7 +59,12 @@
 /* Image Styling */
 .container img {
     width: 200px; /* Set image size */
-    margin-left: 20px; /* Space between text and image */
+    margin-right: 20px; /* Space between text and image */
+}
+
+/* Reversing the direction for the Hobbies and Preferences section */
+.container.hobbies-reversed {
+    flex-direction: row-reverse; /* Reverse the order for this section */
 }
 
 /* Header Styling */
@@ -90,8 +95,9 @@
     <img src="images/me2.jpg" alt="Your Image"> <!-- Image on the right side -->
 </div>
 
-<!-- Hobbies and Preferences Section (Text on the left, Image on the right) -->
-<div class="container">
+<!-- Hobbies and Preferences Section (Image on the left, Text on the right) -->
+<div class="container hobbies-reversed">
+    <img src="your-image1.jpg" alt="Your Image"> <!-- Image on the left side -->
     <div>
         <h2>Hobbies and Preferences</h2> <!-- Header above the points -->
         <ul>
@@ -104,7 +110,6 @@
             <li>❌ I’m not a fan of coriander, celery, green onions, green garlic, or bitter melon</li>
         </ul>
     </div>
-    <img src="your-image1.jpg" alt="Your Image"> <!-- Image on the right side -->
 </div>
 
 <!-- Education Section (Text on the left, Image on the right) -->
@@ -144,7 +149,6 @@
     </div>
     <img src="images/me3.jpg" alt="Your Image"> <!-- Image on the right side -->
 </div>
-
 
 
 
