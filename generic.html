@@ -57,30 +57,36 @@
 
 /* Image Styling */
 .container img {
-    width: 200px;
-    margin-right: 20px;
+    width: 150px; /* Adjusted size for the image */
+    margin-left: 20px;
 }
 
-/* Hobbies section where text goes to the right and image goes to the left */
+/* About Me and Education sections (Text on the left, Image on the right) */
+.container img {
+    order: 2; /* Move image to the right */
+}
+
+/* Hobbies section (Image on the left, Text on the right) */
 .container.hobbies-reversed {
     flex-direction: row-reverse; /* Reverse the order: image on the left, text on the right */
 }
 
 /* Header Styling */
-.container h2 {
+h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 /* List Styling */
-.container ul {
+ul {
     padding-left: 20px; /* Proper padding for the list */
 }
 
-.container ul li {
+ul li {
     padding-left: 10px; /* Adjust space after the bullet point */
+    line-height: 1.5;
 }
 </style>
 
@@ -100,7 +106,7 @@
 
 <!-- Hobbies and Preferences Section (Image on the left, Text on the right) -->
 <div class="container hobbies-reversed">
-    <img src="your-image1.jpg" alt="Your Image"> <!-- Image on the left -->
+    <img src="images/me4.jpg" alt="Your Image"> <!-- Image on the left -->
     <div>
         <h2>Hobbies and Preferences</h2>
         <ul>
@@ -152,7 +158,6 @@
     </div>
     <img src="images/me3.jpg" alt="Your Image">
 </div>
-
 
 
 
