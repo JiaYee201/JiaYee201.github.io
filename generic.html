@@ -60,19 +60,23 @@
 }
 
 .container.text-left {
-    flex-direction: row; 
+    flex-direction: row; /* Text on the left, image on the right */
 }
 
 .container.text-right {
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse; /* Image on the left, text on the right */
 }
 
+/* Ensure consistent styling for all h2 headers */
 .container h2 {
     padding-left: 30px;
-    font-size: 24px; 
-    margin-top: 0; 
+    font-size: 24px !important;  /* Ensure same font size with !important */
+    margin-top: 0; /* Remove any margin on top */
+    margin-bottom: 10px; /* Add space below the header */
+    font-weight: bold;  /* Ensure header is bold */
 }
 </style>
+
 
 
 <div class="container text-left">
