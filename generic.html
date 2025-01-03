@@ -47,105 +47,101 @@
 									<span class="date">February 1, 2005</span>
 				
 <style>
-/* Ensure the container's layout is correct */
+/* Ensure container has flex properties to align elements correctly */
 .container {
     display: flex;
+    flex-direction: row; /* Ensures text is on the left and image on the right */
     align-items: flex-start;
     margin-bottom: 20px;
-    position: relative;
+    padding: 20px;
 }
 
-/* Image styling */
+/* Image Styling */
 .container img {
-    width: 200px; 
-    margin-left: 20px; /* Space between the text and image */
+    width: 200px; /* Set image size */
+    margin-left: 20px; /* Space between text and image */
 }
 
-/* Text on left, image on right */
-.container.text-left {
-    flex-direction: row; /* Text on the left, image on the right */
-}
-
-/* Image on left, text on right */
-.container.text-right {
-    flex-direction: row-reverse; /* Image on the left, text on the right */
-}
-
-/* Header styling */
+/* Header Styling */
 .container h2 {
-    padding-left: 30px;
-    font-size: 24px;  /* Ensures same font size for all headers */
-    margin-top: 0;  /* Removes any unwanted space above */
-    margin-bottom: 10px;  /* Adds space below the header */
-    font-weight: bold;  /* Ensures bold header */
+    font-size: 24px;  /* Consistent header size */
+    font-weight: bold;
+    margin-bottom: 10px;  /* Adds space between header and text */
+    padding-left: 30px;   /* Ensures padding on the left side of header */
 }
 
 /* List styling */
 .container ul {
-    padding-left: 40px; /* Adjust padding for list items */
+    padding-left: 20px; /* Adjust padding for list items */
 }
 </style>
 
 <!-- About Me Section (Text on the left, Image on the right) -->
-<div class="container text-left">
-    <h2>About Me</h2> <!-- Header above the points -->
-    <ul>
-        <li>🏠 I live in Johor, Kulai</li>
-        <li>🍼 I was born on 1 February 2005</li>
-        <li>🪽 My MBTI is ISFJ, which means I have a Defender personality type (Introverted, Observant, Feeling, and Judging)</li>
-        <li>👨‍👨‍👧‍👧 My family has four members, and we all live together</li>
-    </ul>
+<div class="container">
+    <div>
+        <h2>About Me</h2> <!-- Header above the points -->
+        <ul>
+            <li>🏠 I live in Johor, Kulai</li>
+            <li>🍼 I was born on 1 February 2005</li>
+            <li>🪽 My MBTI is ISFJ, which means I have a Defender personality type (Introverted, Observant, Feeling, and Judging)</li>
+            <li>👨‍👨‍👧‍👧 My family has four members, and we all live together</li>
+        </ul>
+    </div>
     <img src="images/me2.jpg" alt="Your Image"> <!-- Image on the right side -->
 </div>
 
 <!-- Hobbies and Preferences Section (Text on the left, Image on the right) -->
-<div class="container text-left">
-    <h2>Hobbies and Preferences</h2> <!-- Header above the points -->
-    <ul>
-        <li>🏸 I'm not a big fan of sports, but I occasionally play badminton with my friends</li>
-        <li>🔍 I love watching detective shows because they are both entertaining and educational</li>
-        <li>🎤 I enjoy singing, though I’m not very good at it</li>
-        <li>🛒 Shopping is one of my favorite ways to relax and enjoy myself</li>
-        <li>🤩 I became a K-pop fan last year, and my biases are Zerobaseone and Seventeen</li>
-        <li>🍴 I enjoy eating different types of food because it’s fun to try new flavors and discover different cuisines</li>
-        <li>❌ I’m not a fan of coriander, celery, green onions, green garlic, or bitter melon</li>
-    </ul>
+<div class="container">
+    <div>
+        <h2>Hobbies and Preferences</h2> <!-- Header above the points -->
+        <ul>
+            <li>🏸 I'm not a big fan of sports, but I occasionally play badminton with my friends</li>
+            <li>🔍 I love watching detective shows because they are both entertaining and educational</li>
+            <li>🎤 I enjoy singing, though I’m not very good at it</li>
+            <li>🛒 Shopping is one of my favorite ways to relax and enjoy myself</li>
+            <li>🤩 I became a K-pop fan last year, and my biases are Zerobaseone and Seventeen</li>
+            <li>🍴 I enjoy eating different types of food because it’s fun to try new flavors and discover different cuisines</li>
+            <li>❌ I’m not a fan of coriander, celery, green onions, green garlic, or bitter melon</li>
+        </ul>
+    </div>
     <img src="your-image1.jpg" alt="Your Image"> <!-- Image on the right side -->
 </div>
 
 <!-- Education Section (Text on the left, Image on the right) -->
-<div class="container text-left">
-    <h2>Education</h2> <!-- Header above the points -->
-    <ul>
-        <li>
-            <strong>Primary School: SJK(C) Kulai 1</strong>
-            <ul>
-                <li>Started serving as a prefect from Grade 4</li>
-                <li>Served as the secretary of the Chinese Language Society</li>
-                <li><strong>Achievement:</strong> UPSR - 6A, 2B</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Secondary School: SMK Bandar Putra</strong>
-            <ul>
-                <li>Treasurer of the Tourism and Outdoor Education Club</li>
-                <li>Assistant Treasurer of the Fire and Rescue Cadet Corps</li>
-                <li>Deputy Editor of the Chinese Language Society magazine</li>
-                <li>Vice Class Representative</li>
-                <li><strong>Achievement:</strong> SPM - 4A+, 4A, 2A-</li>
-            </ul>
-        </li>
-        <li>
-            <strong>University: Universiti Teknologi Malaysia (UTM)</strong>
-            <ul>
-                <li>Mid-Autumn Festival committee member</li>
-                <li>College event crew member</li>
-                <li><strong>Foundation:</strong> CGPA 3.97</li>
-                <li><strong>Degree:</strong> Currently pursuing</li>
-                <li><strong>MUET Score:</strong> 3.5</li>
-            </ul>
-        </li>
-    </ul>
+<div class="container">
+    <div>
+        <h2>Education</h2> <!-- Header above the points -->
+        <ul>
+            <li>
+                <strong>Primary School: SJK(C) Kulai 1</strong>
+                <ul>
+                    <li>Started serving as a prefect from Grade 4</li>
+                    <li>Served as the secretary of the Chinese Language Society</li>
+                    <li><strong>Achievement:</strong> UPSR - 6A, 2B</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Secondary School: SMK Bandar Putra</strong>
+                <ul>
+                    <li>Treasurer of the Tourism and Outdoor Education Club</li>
+                    <li>Assistant Treasurer of the Fire and Rescue Cadet Corps</li>
+                    <li>Deputy Editor of the Chinese Language Society magazine</li>
+                    <li>Vice Class Representative</li>
+                    <li><strong>Achievement:</strong> SPM - 4A+, 4A, 2A-</li>
+                </ul>
+            </li>
+            <li>
+                <strong>University: Universiti Teknologi Malaysia (UTM)</strong>
+                <ul>
+                    <li>Mid-Autumn Festival committee member</li>
+                    <li>College event crew member</li>
+                    <li><strong>Foundation:</strong> CGPA 3.97</li>
+                    <li><strong>Degree:</strong> Currently pursuing</li>
+                    <li><strong>MUET Score:</strong> 3.5</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
     <img src="images/me3.jpg" alt="Your Image"> <!-- Image on the right side -->
 </div>
 
