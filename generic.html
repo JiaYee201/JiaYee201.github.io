@@ -47,7 +47,6 @@
 									<span class="date">February 1, 2005</span>
 				
 <style>
-<style>
 .container {
     display: flex;
     align-items: flex-start;
@@ -56,8 +55,8 @@
 }
 
 .container img {
-    width: 200px; 
-    margin-right: 20px;
+    width: 200px;
+    margin-left: 20px; /* Ensures the image is on the right side of the text */
 }
 
 .container.text-left {
@@ -70,16 +69,17 @@
 
 .container h2 {
     padding-left: 30px;
-    font-size: 24px !important;  /* Ensure same font size */
-    margin-top: 0; /* Remove any margin on top */
-    margin-bottom: 10px; /* Add space below the header */
-    font-weight: bold;  /* Ensure header is bold */
+    font-size: 24px !important;  /* Ensuring all headers are the same size */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .container ul {
-    padding-left: 40px; /* Adjust padding for list items */
+    padding-left: 40px; /* Adds space for list items */
 }
 </style>
+
 
 <!-- About Me Section (Text on the left, Image on the right) -->
 <div class="container text-left">
@@ -90,12 +90,12 @@
         <li>🪽 My MBTI is ISFJ, which means I have a Defender personality type (Introverted, Observant, Feeling, and Judging)</li>
         <li>👨‍👨‍👧‍👧 My family has four members, and we all live together</li>
     </ul>
-    <img src="images/me2.jpg" alt="Your Image">
+    <img src="images/me2.jpg" alt="Your Image"> <!-- Image on the right side -->
 </div>
 
 <!-- Hobbies and Preferences Section (Image on the left, Text on the right) -->
 <div class="container text-right">
-    <img src="your-image1.jpg" alt="Your Image">
+    <img src="your-image1.jpg" alt="Your Image"> <!-- Image on the left side -->
     <div>
         <h2>Hobbies and Preferences</h2> <!-- Header above the points -->
         <ul>
@@ -143,8 +143,9 @@
             </ul>
         </li>
     </ul>
-    <img src="images/me3.jpg" alt="Your Image">
+    <img src="images/me3.jpg" alt="Your Image"> <!-- Image on the right side -->
 </div>
+
 
 
 
