@@ -47,6 +47,7 @@
 									<span class="date">February 1, 2005</span>
 				
 <style>
+/* Ensure the container's layout is correct */
 .container {
     display: flex;
     align-items: flex-start;
@@ -54,32 +55,36 @@
     position: relative;
 }
 
+/* Image styling */
 .container img {
-    width: 200px;
-    margin-left: 20px; /* Ensures the image is on the right side of the text */
+    width: 200px; 
+    margin-left: 20px; /* Space between the text and image */
 }
 
+/* Text on left, image on right */
 .container.text-left {
     flex-direction: row; /* Text on the left, image on the right */
 }
 
+/* Image on left, text on right */
 .container.text-right {
     flex-direction: row-reverse; /* Image on the left, text on the right */
 }
 
+/* Header styling */
 .container h2 {
     padding-left: 30px;
-    font-size: 24px !important;  /* Ensuring all headers are the same size */
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-weight: bold;
+    font-size: 24px;  /* Ensures same font size for all headers */
+    margin-top: 0;  /* Removes any unwanted space above */
+    margin-bottom: 10px;  /* Adds space below the header */
+    font-weight: bold;  /* Ensures bold header */
 }
 
+/* List styling */
 .container ul {
-    padding-left: 40px; /* Adds space for list items */
+    padding-left: 40px; /* Adjust padding for list items */
 }
 </style>
-
 
 <!-- About Me Section (Text on the left, Image on the right) -->
 <div class="container text-left">
@@ -93,21 +98,19 @@
     <img src="images/me2.jpg" alt="Your Image"> <!-- Image on the right side -->
 </div>
 
-<!-- Hobbies and Preferences Section (Image on the left, Text on the right) -->
-<div class="container text-right">
-    <img src="your-image1.jpg" alt="Your Image"> <!-- Image on the left side -->
-    <div>
-        <h2>Hobbies and Preferences</h2> <!-- Header above the points -->
-        <ul>
-            <li>🏸 I'm not a big fan of sports, but I occasionally play badminton with my friends</li>
-            <li>🔍 I love watching detective shows because they are both entertaining and educational</li>
-            <li>🎤 I enjoy singing, though I’m not very good at it</li>
-            <li>🛒 Shopping is one of my favorite ways to relax and enjoy myself</li>
-            <li>🤩 I became a K-pop fan last year, and my biases are Zerobaseone and Seventeen</li>
-            <li>🍴 I enjoy eating different types of food because it’s fun to try new flavors and discover different cuisines</li>
-            <li>❌ I’m not a fan of coriander, celery, green onions, green garlic, or bitter melon</li>
-        </ul>
-    </div>
+<!-- Hobbies and Preferences Section (Text on the left, Image on the right) -->
+<div class="container text-left">
+    <h2>Hobbies and Preferences</h2> <!-- Header above the points -->
+    <ul>
+        <li>🏸 I'm not a big fan of sports, but I occasionally play badminton with my friends</li>
+        <li>🔍 I love watching detective shows because they are both entertaining and educational</li>
+        <li>🎤 I enjoy singing, though I’m not very good at it</li>
+        <li>🛒 Shopping is one of my favorite ways to relax and enjoy myself</li>
+        <li>🤩 I became a K-pop fan last year, and my biases are Zerobaseone and Seventeen</li>
+        <li>🍴 I enjoy eating different types of food because it’s fun to try new flavors and discover different cuisines</li>
+        <li>❌ I’m not a fan of coriander, celery, green onions, green garlic, or bitter melon</li>
+    </ul>
+    <img src="your-image1.jpg" alt="Your Image"> <!-- Image on the right side -->
 </div>
 
 <!-- Education Section (Text on the left, Image on the right) -->
