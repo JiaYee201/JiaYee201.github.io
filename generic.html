@@ -47,10 +47,9 @@
 									<span class="date">February 1, 2005</span>
 				
 <style>
-/* Ensure container has flex properties to align elements correctly */
+/* Container Styling */
 .container {
     display: flex;
-    flex-direction: row; /* Default: text on the left, image on the right */
     align-items: flex-start;
     margin-bottom: 20px;
     padding: 20px;
@@ -58,33 +57,33 @@
 
 /* Image Styling */
 .container img {
-    width: 200px; /* Set image size */
-    margin-right: 20px; /* Space between text and image */
+    width: 200px;
+    margin-right: 20px;
 }
 
-/* Reversing the direction for the Hobbies and Preferences section */
+/* Hobbies section where text goes to the right and image goes to the left */
 .container.hobbies-reversed {
-    flex-direction: row-reverse; /* Reverse the order for this section */
+    flex-direction: row-reverse; /* Reverse the order: image on the left, text on the right */
 }
 
 /* Header Styling */
 .container h2 {
-    font-size: 24px;  /* Consistent header size */
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;  /* Adds space between header and text */
-    padding-left: 30px;   /* Ensures padding on the left side of header */
+    margin-bottom: 10px;
+    padding-left: 30px;
 }
 
-/* List styling */
+/* List Styling */
 .container ul {
-    padding-left: 20px; /* Adjust padding for list items */
+    padding-left: 20px;
 }
 </style>
 
 <!-- About Me Section (Text on the left, Image on the right) -->
 <div class="container">
     <div>
-        <h2>About Me</h2> <!-- Header above the points -->
+        <h2>About Me</h2>
         <ul>
             <li>🏠 I live in Johor, Kulai</li>
             <li>🍼 I was born on 1 February 2005</li>
@@ -92,14 +91,14 @@
             <li>👨‍👨‍👧‍👧 My family has four members, and we all live together</li>
         </ul>
     </div>
-    <img src="images/me2.jpg" alt="Your Image"> <!-- Image on the right side -->
+    <img src="images/me2.jpg" alt="Your Image">
 </div>
 
 <!-- Hobbies and Preferences Section (Image on the left, Text on the right) -->
 <div class="container hobbies-reversed">
-    <img src="your-image1.jpg" alt="Your Image"> <!-- Image on the left side -->
+    <img src="imaages/me4.jpg" alt="Your Image"> <!-- Image on the left -->
     <div>
-        <h2>Hobbies and Preferences</h2> <!-- Header above the points -->
+        <h2>Hobbies and Preferences</h2>
         <ul>
             <li>🏸 I'm not a big fan of sports, but I occasionally play badminton with my friends</li>
             <li>🔍 I love watching detective shows because they are both entertaining and educational</li>
@@ -115,7 +114,7 @@
 <!-- Education Section (Text on the left, Image on the right) -->
 <div class="container">
     <div>
-        <h2>Education</h2> <!-- Header above the points -->
+        <h2>Education</h2>
         <ul>
             <li>
                 <strong>Primary School: SJK(C) Kulai 1</strong>
@@ -147,7 +146,7 @@
             </li>
         </ul>
     </div>
-    <img src="images/me3.jpg" alt="Your Image"> <!-- Image on the right side -->
+    <img src="images/me3.jpg" alt="Your Image">
 </div>
 
 
