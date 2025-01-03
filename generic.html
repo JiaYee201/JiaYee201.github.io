@@ -85,12 +85,24 @@ ul {
 }
 
 ul li {
-    padding-left: 10px; /* Align text right after the bullet */
     margin-left: 0; /* No left margin */
-    list-style-position: inside; /* Bullet and text align inside */
     line-height: 1.5;
+    list-style-type: disc; /* Set the list style to default bullet */
+    list-style-position: outside; /* Keep the bullets outside */
+    padding-left: 20px; /* Space for the text */
+}
+
+ul li::before {
+    content: ''; /* Empty content for the bullet */
+    position: absolute;
+    left: 0;
+}
+
+ul li span {
+    margin-left: 10px; /* Space between the bullet and text */
 }
 </style>
+
 
 
 <!-- About Me Section (Text on the left, Image on the right) -->
