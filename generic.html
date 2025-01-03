@@ -47,6 +47,7 @@
 									<span class="date">February 1, 2005</span>
 				
 <style>
+<style>
 .container {
     display: flex;
     align-items: flex-start;
@@ -67,20 +68,22 @@
     flex-direction: row-reverse; /* Image on the left, text on the right */
 }
 
-/* Ensure consistent styling for all h2 headers */
 .container h2 {
     padding-left: 30px;
-    font-size: 24px !important;  /* Ensure same font size with !important */
+    font-size: 24px !important;  /* Ensure same font size */
     margin-top: 0; /* Remove any margin on top */
     margin-bottom: 10px; /* Add space below the header */
     font-weight: bold;  /* Ensure header is bold */
 }
+
+.container ul {
+    padding-left: 40px; /* Adjust padding for list items */
+}
 </style>
 
-
-
+<!-- About Me Section (Text on the left, Image on the right) -->
 <div class="container text-left">
-    <h2>About Me</h2>
+    <h2>About Me</h2> <!-- Header above the points -->
     <ul>
         <li>🏠 I live in Johor, Kulai</li>
         <li>🍼 I was born on 1 February 2005</li>
@@ -90,10 +93,11 @@
     <img src="images/me2.jpg" alt="Your Image">
 </div>
 
+<!-- Hobbies and Preferences Section (Image on the left, Text on the right) -->
 <div class="container text-right">
     <img src="your-image1.jpg" alt="Your Image">
     <div>
-        <p><strong>Hobbies and Preferences</strong></p>
+        <h2>Hobbies and Preferences</h2> <!-- Header above the points -->
         <ul>
             <li>🏸 I'm not a big fan of sports, but I occasionally play badminton with my friends</li>
             <li>🔍 I love watching detective shows because they are both entertaining and educational</li>
@@ -106,9 +110,9 @@
     </div>
 </div>
 
-
+<!-- Education Section (Text on the left, Image on the right) -->
 <div class="container text-left">
-    <h2>Education</h2>
+    <h2>Education</h2> <!-- Header above the points -->
     <ul>
         <li>
             <strong>Primary School: SJK(C) Kulai 1</strong>
@@ -141,6 +145,7 @@
     </ul>
     <img src="images/me3.jpg" alt="Your Image">
 </div>
+
 
 
 
