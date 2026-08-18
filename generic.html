@@ -1,188 +1,213 @@
 <!DOCTYPE HTML>
 <!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Jia Yee E-Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Jia Yee E-Portfolio - About Me</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <!-- Wrapper -->
+            <div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">More about me</a>
-					</header>
+                <!-- Header -->
+                    <header id="header">
+                        <a href="index.html" class="logo">About Me</a>
+                    </header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li class="active"><a href="generic.html">More about me</a></li>
-							<li><a href="elements.html">Course Information</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/jia.yee.92123?mibextid=JRoKGi" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/yee0201jia/profilecard/?igsh=bXZzdGVsazk3cWNl" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/JiaYee201" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="http://www.linkedin.com/in/lee-jia-yee-19859b33a" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						</ul>
-					</nav>
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul class="links">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="generic.html">About Me</a></li>
+                            <li><a href="elements.html">Projects and Coursework</a></li>
+                        </ul>
+                        <ul class="icons">
+                            <li><a href="mailto:lee03180504@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                            <li><a href="https://github.com/JiaYee201" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                            <li><a href="http://www.linkedin.com/in/lee-jia-yee-19859b33a" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        </ul>
+                    </nav>
 
-				<!-- Main -->
-					<div id="main">
+                <!-- Main -->
+                    <div id="main">
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<span class="date">February 1, 2005</span>
-				
+                        <!-- Post -->
+                            <section class="post">
+                                <header class="major">
+                                    <h2><a href="#">About Me<br /></a></h2>
+                                </header>
+                
 <style>
-.container {
+.container-box {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.03); 
+    border-left: 4px solid #2c3e50; 
+    padding: 25px; 
+    border-radius: 0 4px 4px 0; 
+    margin-top: 15px; 
+    margin-bottom: 30px;
 }
 
-/* Image Styling */
-.container img {
+/* Class specifically to center the image vertically */
+.container-box.align-center {
+    align-items: center;
+}
+
+.container-box img {
     width: 250px; 
     height: 400px;
-    margin-left: 20px;
-    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
-.container img {
-    order: 2; /* Move image to the right */
+.container-box .content-area {
+    flex: 1;
 }
 
-.container.hobbies-reversed {
-    flex-direction: row-reverse; /* Reverse the order: image on the left, text on the right */
+.container-box img {
+    margin-left: 25px;
+    margin-right: 0;
+}
+
+.container-box.image-left img {
+    margin-left: 0;
+    margin-right: 25px;
+}
+.container-box.image-left {
+    flex-direction: row;
 }
 
 h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-    padding-left: 20px;
+    padding-left: 0;
 }
-
 </style>
 
-
-
-<!-- About Me Section (Text on the left, Image on the right) -->
-<div class="container">
-    <div>
-        <h2>About Me</h2>
-        <ul style="text-align:left">
-            <li>🏠 I live in Johor, Kulai</li>
-            <li>🍼 I was born on 1 February 2005</li>
-            <li>🪽 My MBTI is ISFJ, which means I have a Defender personality type (Introverted, Observant, Feeling, and Judging)</li>
-            <li>👨‍👨‍👧‍👧 My family has four members, and we all live together</li>
+<!-- Personal Details Section -->
+<h2>Personal Details</h2>
+<div class="container-box">
+    <div class="content-area">
+        <ul style="text-align:left; margin-bottom: 0;">
+            <li style="margin-bottom: 10px;">🏠 I live in Kulai, Johor, Malaysia. </li>
+            <li style="margin-bottom: 10px;">🍼 I was born on 1 February 2005.</li>
+            <li style="margin-bottom: 10px;">⭐ My Zodiac Sign is Aquarius.</li>
+            <li style="margin-bottom: 10px;">🪽 My MBTI is ISFJ, which means I have a Defender personality type (Introverted, Observant, Feeling, and Judging).</li>
+            <li style="margin-bottom: 10px;">🗣️ I can speak in English, Bahasa Melayu and Mandarin.</li>
+            <li style="margin-bottom: 0;">👨‍👨‍👧‍👧 My family consists of 4 members and we all live happily together.</li>
         </ul>
     </div>
-    <img src="images/me2.jpg" alt="Your Image">
+    <img src="images/me2.jpg" alt="Jia Yee Portrait">
 </div>
 
-<!-- Hobbies and Preferences Section (Image on the left, Text on the right) -->
-<div class="container hobbies-reversed">
-    <img src="images/me4.jpg" alt="Your Image"> <!-- Image on the left -->
-    <div>
-        <h2>Hobbies and Preferences</h2>
-        <ul style="text-align:left">
-            <li>🏸 I'm not a big fan of sports, but I occasionally play badminton with my friends</li>
-            <li>🔍 I love watching detective shows because they are both entertaining and educational</li>
-            <li>🛒 Shopping is one of my favorite ways to relax and enjoy myself</li>
-            <li>❌ I’m not a fan of coriander, celery, green onions, green garlic, or bitter melon</li>
+<!-- Hobbies and Preferences Section -->
+<h2>Hobbies and Preferences</h2>
+<div class="container-box image-left">
+    <img src="images/me4.jpg" alt="Hobbies">
+    <div class="content-area">
+        <ul style="text-align:left; margin-bottom: 0;">
+            <li style="margin-bottom: 10px;">🏸 I'm not a big fan of sports, but I occasionally play badminton with my friends.</li>
+            <li style="margin-bottom: 10px;">🔍 I love watching detective shows because they are both entertaining and educational.</li>
+            <li style="margin-bottom: 10px;">🛒 Shopping is one of my favorite ways to relax and enjoy myself.</li>
+            <li style="margin-bottom: 10px;">🎧 I love listening to music while doing my work.</li>
+            <li style="margin-bottom: 0;">❌ I'm not a fan of coriander, celery, green onions, green garlic and bitter melon.</li>
         </ul>
     </div>
 </div>
 
-<div class="container">
-    <div>
-        <h2>Education and Achievements</h2>
-        <ul style="text-align:left">
-            <li>
-                <strong>Primary School: SJK(C) Kulai 1 (2012-2017)</strong>
-                <ul>
+<!-- Education and Achievements Section -->
+<h2>Education and Achievements</h2>
+<div class="container-box align-center">
+    <div class="content-area">
+        <ul style="text-align:left; margin-bottom: 0;">
+            <li style="margin-bottom: 15px;">
+                <strong>Primary School: SJK (C) Kulai 1 (2012-2017)</strong>
+                <ul style="margin-top: 5px;">
                     <li>Started serving as a prefect from Grade 4</li>
                     <li>Served as the secretary of the Chinese Language Society</li>
-                    <li><strong>Achievement:</strong> UPSR - 6A, 2B</li>
+                    <li><strong>Achievement:</strong> UPSR - 6A 2B</li>
                 </ul>
             </li>
-            <li>
+            <li style="margin-bottom: 15px;">
                 <strong>Secondary School: SMK Bandar Putra (2018-2022)</strong>
-                <ul>
+                <ul style="margin-top: 5px;">
                     <li>Treasurer of the Tourism and Outdoor Education Club</li>
                     <li>Assistant Treasurer of the Fire and Rescue Cadet Corps</li>
                     <li>Deputy Editor of the Chinese Language Society magazine</li>
                     <li>Vice Class Representative</li>
-                    <li><strong>Achievement:</strong> SPM - 4A+, 4A, 2A-</li>
+                    <li><strong>Achievement:</strong> SPM - 4A+ 4A 2A- </li>
                 </ul>
             </li>
-            <li>
+            <li style="margin-bottom: 0;">
                 <strong>University: Universiti Teknologi Malaysia (UTM) (2023-now)</strong>
-                <ul>
+                <ul style="margin-top: 5px;">
                     <li>Mid-Autumn Festival committee member</li>
                     <li>College event crew member</li>
-                    <li><strong>Foundation:</strong> CGPA 3.97</li>
-                    <li><strong>Degree:</strong> Currently pursuing</li>
-                    <li><strong>MUET Score:</strong> 3.5</li>
+                    <li><strong>Foundation:</strong> CGPA 3.97 </li>
+                    <li><strong>Degree:</strong> Current CGPA 4.0 </li>
+                    <li><strong>MUET Score:</strong> Band 3.5 </li>
                 </ul>
             </li>
         </ul>
     </div>
-    <img src="images/me3.jpg" alt="Your Image" style="width=500px">
+    <img src="images/me3.jpg" alt="University Life">
 </div>
 
+<hr />
 
-									
+<!-- Contact and Socials -->
+<h2>Contact and Socials</h2>
+<div style="background-color: rgba(0, 0, 0, 0.03); border-left: 4px solid #2c3e50; padding: 20px 25px; border-radius: 0 4px 4px 0; margin-top: 15px; margin-bottom: 30px;">
+    <p style="margin-bottom: 15px; color: #444; font-size: 1.05em;">
+        I am always open to discussing new projects, opportunities or collaborations. Feel free to reach out through the channels below:
+    </p>
+    
+    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;">
+        <li style="margin-bottom: 10px;">
+            📧 <strong>Email:</strong> <a href="mailto:lee03180504@gmail.com" style="text-decoration: none;">lee03180504@gmail.com</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            💼 <strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/lee-jia-yee-19859b33a" target="_blank" style="text-decoration: none;">View LinkedIn Profile</a>
+        </li>
+        <li style="margin-bottom: 0;">
+            🐙 <strong>GitHub:</strong> <a href="https://github.com/JiaYee201" target="_blank" style="text-decoration: none;">View GitHub Repositories</a>
+        </li>
+    </ul>
+</div>
+                            </section>
 
+                        <footer>
+                            <div class="pagination">
+                                <a href="https://jiayee201.github.io/index.html" class="previous">Prev</a>
+                                <a href="https://jiayee201.github.io/index.html" class="page">1</a>
+                                <a href="#" class="page active">2</a>
+                                <a href="https://jiayee201.github.io/elements.html" class="page">3</a>
+                                <a href="https://jiayee201.github.io/elements.html" class="next">Next</a>
+                            </div>
+                        </footer>
 
+                    </div>
 
-						
+            </div>
 
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
 
-						<footer>
-  <div class="pagination">
-    <a href="https://jiayee201.github.io/index.html" class="previous">Prev</a>
-    <a href="https://jiayee201.github.io/index.html" class="page">1</a>
-    <a href="#" class="page active">2</a>
-    <a href="https://jiayee201.github.io/elements.html" class="page">3</a>
-    <a href="https://jiayee201.github.io/elements.html" class="next">Next</a>
-  </div>
-</footer>
-
-					</div>
-
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    </body>
 </html>
-
-
-
-
-
-
